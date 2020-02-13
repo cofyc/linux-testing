@@ -79,6 +79,13 @@ Solutions:
 This issue might be fixed in centos 7.8 (3.10.0-1075.el7), but I didn't verify
 it.
 
+## Solution
+
+- Upgrade the kernel to the latest (3.10.0-1062.12.1.el7.x86_64) and enable
+  `cgroup.memory=nokmem` kernel parameter
+- Try `kernel-3.10.0-1075.el7` in CentOS 7.8
+- Or upgrade to use kernel 4.x (CentOS 8)
+
 ## References
 
 - https://pingcap.com/blog/try-to-fix-two-linux-kernel-bugs-while-testing-tidb-operator-in-k8s/
